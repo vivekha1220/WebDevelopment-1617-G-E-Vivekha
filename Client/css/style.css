@@ -1,0 +1,753 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{ margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;}
+
+a{ text-decoration: none; }
+
+a:hover{ text-decoration: none; }
+
+li{ list-style: none; }
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color:#696969;
+}
+
+.extra-div h2{
+    font-size: 1.5rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+    
+}
+
+.headings h1{
+    font-size: 33px;
+}
+
+.font-weight-bold{
+    font-size: 3rem;
+}
+
+
+/************************ actual css classes start******************/
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(255, 102, 0, 0.3), rgba(204, 0, 102, 0.3)), url('../images/aaron-burden-QJDzYT_K8Xg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
+    position: relative;
+}
+
+.header:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left:0 ;
+    right: 0 ;
+    opacity: .8;
+    z-index: -1;
+    background: linear-gradient(to right, #cc0066 0%, #ff6600 100%);
+}
+
+.navbar:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left:0 ;
+    right: 0 ;
+    opacity: 80%;
+    z-index: -1;
+    background: linear-gradient(to right, #cc0066 0%, #ff6600 100%);
+    
+}
+
+.nav-item a{
+    color: white!important;
+    font-weight: bold;
+}
+
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.header-buttons a{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.header-buttons a:hover{
+    color: #cc0066;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.center-div p{
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: white;
+}
+
+/************** extra header div css start *************/
+
+.header-extradiv{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+
+}
+
+.extra-div{
+    background-color: white;
+    border: medium none;
+    padding: 50px!important;
+    margin-top: 30px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.extra-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    border-radius: 20px;
+    transform: translateY(-20px);
+
+}
+
+
+/************** extra header div css end *************/
+
+/************** our story starts *************/
+
+.serviceoffers{
+    background-image:linear-gradient(rgba(0,0,0,0.4), rgba(209, 9, 119, 0.3)), url('../images/clem-onojeghuo-x7CDil50KKY-unsplash.jpg');
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: -70px;
+    transition: 0.3s;
+}
+
+
+.serviceoffers p{
+    color:white;
+    text-align: center;
+    margin-top: 30px;
+}
+.serviceoffers:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-15px);
+}
+
+/************** our story ends *************/
+
+/************** about developer starts *************/
+
+
+.about h1{
+    margin-top: 200px;
+}
+.myphoto{
+    width: 355px;
+    align-items: center;
+    margin-top: 14px!important;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+
+}
+
+.myphoto-main{
+    background:linear-gradient(to right, #cc0066 0%, #ff6600 100%);
+    border: medium none;
+    padding: 0px!important;
+    border-radius: 30px;
+    margin-top: 50px!important;
+    transition: 0.3s;
+    
+}
+
+.myphoto-main:hover{
+    
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+}
+
+.mydetails-main{
+    background: white;
+    border: medium none;
+    padding: 50px!important;
+    margin-top: 90px;
+    border-radius: 30px;
+    transition: 0.3s;
+    
+}
+
+.mydetails-main h2{
+    color: #cc0066;
+    font-size: 25px;
+}
+.mydetails-main h4{
+    color:#464646;
+    font-size: 17px;
+}
+.mydetails-main p{
+    margin-top: 25px;
+    text-align:justify ;
+}
+
+/************** about developer ends *************/
+    
+
+/************** portfolio swiper slide start *************/
+
+body {
+    background: #262626;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper-container h2{
+    color: white;
+    font-size: 25px;
+    margin: 20px 0 25px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+      
+  }
+
+  .swiper-buttons a{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 20px 0 60px 0;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.swiper-buttons a:hover{
+    color: #cc0066;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+  .swiper-container {
+    width: 100%;
+    background:linear-gradient(to right, #202020 0%, #2c2c2c 100%);
+    margin: 0px 0 40px 0;
+    margin-top: -40px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    background: white;
+    margin-top: 40px;
+
+  }
+
+.swiper-slide .imgBx{
+    width: 300px;
+    overflow: hidden;
+}
+.imgBx img{
+    width: 300px;
+}
+
+/************** portfolio swiper slide ends *************/
+
+
+/************** testimonial start *************/
+
+.happyclients{
+    width: 100%;
+    height: 60vh;
+    padding: 80px, 0;
+    margin-top:120px;
+}
+
+.box{
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.box:hover{
+    background: linear-gradient(to right, #cc0066 0%, #ff6600 100%)  ;
+}
+/*.box:hover .box a:after{
+    background: white!important;
+}*/
+
+.box:hover p{
+    color: white;
+}
+
+.box:hover h1{
+    color: #fff;
+}
+
+.box:hover h2{
+    color: rgb(226, 226, 226);
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -60px!important;
+}
+
+.carousel-indicators li{
+    background-color: #cc0066!important;
+}
+
+.box a{
+    position: relative;
+}
+
+.box a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.box a:after{
+    content: " “ ";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    background:linear-gradient(to right, #cc0066 0%, #ff6600 100%)  ;
+    color: white;
+    position: absolute;
+    top: 120%;
+    left: 70%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+}
+
+.box h1{
+    font-size: 15px;
+    font-size: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.box h2{
+    font-size: 13px;
+    font-weight: 400px;
+    color: #666666;
+    margin-bottom: 20px ;
+}
+
+/************** testimonial end *************/
+
+
+/************** your testimonial start *************/
+
+.testimonialsform{
+    margin-bottom: 90px;
+    margin-top: 200px;
+}
+
+.testimonialsform h1{
+    font-size: 20px;
+    
+}
+.form1-button button{
+    border: 1px solid #666666;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #666666;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    background: transparent;
+}
+form:hover .form1-button button{
+color: #cc0066;
+border: #cc0066 ;
+background: #fff;
+text-decoration: none;
+box-shadow: 0 0 20px 0 rgba(0,0,0,0.3)
+
+}
+
+.human-features-suggestion p {
+    font-size: 15px;
+}
+
+div#featureLoading {
+    display: none;
+}
+
+#feature-list {
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.form-control {
+    resize: none;
+}
+
+
+/************** your testimonial end *************/
+
+
+/************** contact us start *************/
+
+.contactus{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    position: relative;
+}
+
+.contactus h1{
+    color: white;
+}
+
+.contactus p{
+    color: white;
+}
+
+.contactus:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #2c2c2c ;
+    z-index: -1;
+}
+
+.msg{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    letter-spacing: 0.2rem;
+    font-style: italic;
+    width: 340px;
+    padding: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    display: none;
+}
+
+.msgAppear{
+    display: block;
+}
+.form2-button button{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    background: transparent;
+}
+form:hover .form2-button button{
+color: #cc0066;
+border: #cc0066 ;
+background: #fff;
+text-decoration: none;
+box-shadow: 0 0 20px 0 rgba(0,0,0,0.3)
+
+}
+::placeholder{
+    font-size: 0.85rem;
+}
+
+/************** contact us end *************/
+
+/************** courses start *************/
+
+.courses-body{
+    margin: 0;
+    padding: 0;
+    background: #262626;
+}
+.courses-section h1{
+    color: white;
+    margin-top: 150px;
+}
+.courses-section .swiper-buttons{
+    margin-top: 30px;
+}
+.container-courses{
+    margin: 50px auto 0;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.container-courses .boxC{
+    position: relative;
+    width: 350px;
+    height: 260px;
+    margin: 35px;
+    box-sizing: border-box;
+    display: inline-block;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3)
+
+}
+.container-courses .boxC .imgBoxC{
+    position: relative;
+    overflow: hidden;
+}
+
+.container-courses .boxC .imgBoxC img{
+    max-width: 100%;
+    transition: transform 2s;
+}
+
+.container-courses .boxC:hover .imgBoxC img{
+    transform: scale(1.2);
+}
+
+/************** courses end *************/
+
+
+/************** footer start *************/
+
+.footersection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background: linear-gradient(to right, #cc0066 0%, #ff6600 100%)  ;
+    position: relative;
+}
+
+.footersection p{
+    color: white;
+
+}
+
+.footersection li a{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: white;
+    text-transform: capitalize;
+    
+}
+
+.footersection h3{
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 25px;
+    font-size: 1.2rem!important;
+    font-weight: 600;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+/*#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: white;
+    background: #ff6600;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#myBtn:hover{
+    background: #606060;
+}*/
+
+.copyrights{
+    padding-top: 30px;
+}
+/************** footer end *************/
+
+
+
+/*************** media queries ***********/
+
+@media(max-width: 991px){
+
+    .extra-div{
+        
+        padding: 10px!important;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+    }
+
+    .mydetails-main:nth-child(1){
+        
+        padding: 20px!important;
+        margin-top: 60px;
+        border-radius: 30px;
+        
+    }
+    .myphoto{
+    align-items: center;
+    margin-top: 23px!important;
+    }
+    
+    .testimonialsform{
+        margin-top: 100px!important;
+        }
+    
+    .contactus{
+        padding: 40px!important;
+        
+    }
+
+}
+@media(max-width: 767px){
+    .nav-item{
+        text-align: center;
+    }
+
+    .header-extradiv{
+        height: auto;
+        margin: 70px 0;
+        
+    }
+
+    .extra-div{
+     
+        padding: 10px!important;
+        margin-top: 15px;
+        border-radius: 3px;
+        transition: 0.3s;
+    }
+
+    .mydetails-main{
+        
+        border: medium none;
+        padding: 15px!important;
+        margin-top: 0px;
+        
+    }
+    .myphoto{
+        
+        width: 250px;
+        margin-top: 14px;
+        
+    
+    }
+    
+    .happyclients{
+        height: 60vh;
+        margin-top: 50px;
+    }
+
+    .testimonialsform{
+    margin-top: 70px!important;
+    }
+
+    .contactus{
+        width: 100%;
+        height: 100vh;
+        
+        padding-top: 40px;
+        
+        
+        
+        position: relative;
+    }
+    
+    .contactus p{
+        padding: 0 40px;
+    }
+
+    .footer-div:nth-child(2){
+        text-align: left!important;
+
+    }
+
+    .footer-div{
+        margin: 20px 0;
+
+    }
+
+    .container-courses{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+    .container-courses .boxC{
+        
+        width: 350px;
+        height: 260px;
+        margin: 5px;
+        box-sizing: border-box;
+        display: inline-block;
+        box-shadow: 0 0 20px 0 rgba(0,0,0,0.3)
+    
+    }
+}
+
+
+
+
+
+    
+
